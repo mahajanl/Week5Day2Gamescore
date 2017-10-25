@@ -15,6 +15,6 @@ namespace Week5Day2.Models
 
         public int Points { get; set; }
 
-
+        public string Team { get; set; }
     }
 }

@@ -46,7 +46,7 @@ namespace Week5Day2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Points")] Scores scores)
+        public ActionResult Create([Bind(Include = "ID,Name,Points,Team")] Scores scores)
         {
             if (ModelState.IsValid)
             {
@@ -73,7 +73,7 @@ namespace Week5Day2.Controllers
             return View(scores);
         }
 
-        // POST: Scores/Edit/5
+        // POST: Scores/Edit/5 => placeholder for an ID, not important otherwise
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
